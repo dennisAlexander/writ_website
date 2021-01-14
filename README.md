@@ -13,3 +13,4 @@ when single page links are clicked the section title is covered by navbar
 
 add one sentence blockquote description to every 'work' section
 
+move audio and video to media folder
