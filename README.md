@@ -1,3 +1,9 @@
+git instruct for this project:
+git add [file]   
+git commit -a -m ""  
+git push origin main
+
+
 home removed? logo used instead?
 
 to-fix:
