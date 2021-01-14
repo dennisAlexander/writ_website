@@ -195,8 +195,18 @@ footer {
     
     margin: auto;
     text-align: center;
-    width: 90%;
+    width: 100%;
   } 
+
+  
+
+  @media(max-width: 1000px) {
+    .menu {
+      display: inline-block;
+      flex-shrink: 1;
+      justify-content: space-around;
+    }
+  }
   
   @media(max-width: 768px) {
       .nav-wrapper {
@@ -224,6 +234,8 @@ footer {
   .logo a {
     cursor: text;
   }
+
+  
   
   @media(max-width: 768px) {
       .logo {
