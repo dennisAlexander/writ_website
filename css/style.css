@@ -80,6 +80,7 @@ h1 {
   letter-spacing: 1px;
   text-transform: uppercase;
   text-shadow: 1px 1px #ccc;
+  padding-top: 40px;
 }
 
 h2 {
@@ -141,9 +142,21 @@ ul {
   font-weight: 400;
 }
 
-.manifesto {
+.manifesto > p {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
   font-style: italic;
-  margin: 20px;
+  margin: 10px;
+  
+}
+
+.zines p {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  font-style: italic;
+  margin: 10px;
 }
 
 /* add p tag to text so to control it */
@@ -170,7 +183,7 @@ footer {
     ======================================================*/
   #navbar {
     display: flex;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
     flex-direction: row;
     background: #ccc;
     color: rgb(13, 26, 38);
@@ -210,12 +223,50 @@ footer {
   
   @media(max-width: 768px) {
       .nav-wrapper {
-        width: 90%;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        background-color: #ccc;
+        font-size: 1.4rem;
       }
-    } @media(max-width: 638px) {
+      .menu ul{
+        display: flex;
+        flex: 1 1 50%;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: center;
+
+      }
+      .logo1 {
+        height: 35px;
+         width: 45px;
+       }
+
+       #about {
+         margin-top: 400px;
+       }
+
+       h1 {
+        margin: 20px;
+        text-align: center;
+        font-size: 1.2rem;
+        font-weight: 600;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        text-shadow: 1px 1px #ccc;
+        padding-top: 70px;
+      }
+    } 
+    
+    @media(max-width: 638px) {
         .nav-wrapper {
           width: 100%;
         }
+
+        .logo1 {
+          height: 35px;
+           width: 45px;
+         }
       } 
   
   
@@ -235,7 +286,7 @@ footer {
     cursor: text;
   }
 
-  
+  /* redundant code ?      VVVVVVV  */
   
   @media(max-width: 768px) {
       .logo {
@@ -252,7 +303,11 @@ footer {
     text-align: right;
     transition: transform 0.5s ease-out;
     -webkit-transition: transform 0.5s ease-out;
-  } @media(max-width: 640px) {
+  }
+  
+  
+  
+  @media(max-width: 640px) {
       #navbar ul {
         display: none;
       }
@@ -261,6 +316,8 @@ footer {
           display: inline-block;
         } */
       }
+
+/* hamburger that basically works */
 
   .hamburger {
     background-color: transparent;
@@ -387,7 +444,7 @@ i ul li {       /*color of icons won't change yet*/
 
     /* my code  */
 
-    /* hamburger menu not functional yet */
+    /* hamburger menu  functionalish */
 
 @media screen and (max-width: 767px) {
   .navbar ul {
@@ -396,9 +453,9 @@ i ul li {       /*color of icons won't change yet*/
     width: 100%;
     }
   
-  .menu.show {
+  /* .menu.show {
     display: flex;
-  }
+  } */
 
   #menu {
     display: none;
